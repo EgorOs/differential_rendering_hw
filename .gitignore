@@ -1,2 +1,4 @@
 */Solution.ipynb
 *__pycache__*
+.virtual_documents
+.ipynb_checkpoints

@@ -1,0 +1,25 @@
+name: diff_rendering
+channels:
+- conda-forge
+- nvidia
+- iopath
+- pytorch3d
+- pytorch
+dependencies:
+- python>=3.9
+- pip
+- jupyterlab>=3.0
+- jupyter
+- ipykernel
+- jupyter-lsp
+- jupyterlab-lsp
+- python-language-server
+- jedi=0.17.2 # pinned because one of the language server packages needs it precisely pinned here
+- pytorch
+- torchvision
+- pytorch-cuda
+- pytorch3d
+- tqdm
+- matplotlib
+- pip:
+  - opencv-python-headless
