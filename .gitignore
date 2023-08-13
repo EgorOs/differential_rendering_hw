@@ -2,3 +2,5 @@
 *__pycache__*
 .virtual_documents
 .ipynb_checkpoints
+.lsp_symlink
+Rendering/mesh_result
