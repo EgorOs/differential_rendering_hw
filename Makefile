@@ -1,18 +1,19 @@
 .PHONY: *
 
 ENV_NAME := diff_rendering
+PKG_MANAGER := mamba  # or conda
 
 create_env:
-	conda env create -n $(ENV_NAME) --file environment.yml
+	$(PKG_MANAGER) env create -n $(ENV_NAME) --file environment.yml
 
 
 activate_env:
     # May need to call `source activate base` first.
-	conda activate $(ENV_NAME)
+	$(PKG_MANAGER) activate $(ENV_NAME)
 
 
 update_env:
-	conda env update -n $(ENV_NAME) --file environment.yml
+	$(PKG_MANAGER) env update -n $(ENV_NAME) --file environment.yml
 
 
 jupyterlab_start:
