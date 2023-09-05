@@ -24,3 +24,4 @@ dependencies:
 - cudatoolkit==11.8
 - pip:
   - opencv-python-headless
+  - imageio
